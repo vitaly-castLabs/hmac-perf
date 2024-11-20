@@ -23,7 +23,7 @@ if (APPLE)
     set(OPENSSL_ROOT_DIR ${BREW_SSL_DIR} CACHE STRING "Path to OpenSSL")
 endif()
 
-find_package(OpenSSL "1.1.1" COMPONENTS Crypto REQUIRED)
+find_package(OpenSSL "3.0.0" COMPONENTS Crypto REQUIRED)
 
 add_executable(${TARGET_NAME} main.cpp)
 
