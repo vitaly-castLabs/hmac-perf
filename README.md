@@ -26,6 +26,24 @@ Done in 1643 ms
 ============================================================
 ```
 
+Ubuntu 22.04.5, OpenSSL 3.0.2, Intel Core i5-13400T (note the discrepancy for Reuse HMAC - to be fixed):
+```
+=== Naive HMAC =============================================
+Result: 1a275a1ffb0ffbe37ed949dbbf806b61777de4be7c5cf470e7c1e468e130d873
+Done in 1668 ms
+============================================================
+
+=== Reuse HMAC ctx =========================================
+Result: bdfcbecdcd87291681764cf25917c0086b4be5b64e726bc52480c5d901fce205
+Done in 1552 ms
+============================================================
+
+=== Reuse chunked ==========================================
+Result: 7caa23211cda84c2919031ccdabac502630021707436afb8594a49f7969bf2b4
+Done in 1889 ms
+============================================================
+```
+
 ## Build and run on Windows
 Git Bash or such:
 ```bash
